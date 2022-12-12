@@ -1,0 +1,92 @@
+/*font-family: 'Alfa Slab One', cursive;*/
+/*font-family: 'Architects Daughter', cursive;*/
+
+
+footer {
+    background-color: rgb(116, 116, 177);
+}
+
+iframe {
+    border: 5px solid #ffffff;
+    box-shadow: 2px 7px 53px 5px rgba(15,3,3,1);
+-webkit-box-shadow: 2px 7px 53px 5px rgba(15,3,3,1);
+-moz-box-shadow: 2px 7px 53px 5px rgba(15,3,3,1);
+}
+
+
+h1,
+h4 h5 {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+
+.hero {
+    background: url(../images/paramo.jpg) no-repeat;
+    background-size: cover;
+    height: 0.5vh;
+    min-height: 600px;
+    color: whitesmoke;
+}
+
+
+.proximas-fechas li {
+    margin: 6px 0;
+}
+
+
+.proximas-fechas li a {
+    font-family: 'Alfa Slab One', cursive;
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(49, 48, 48);
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+
+.proximas-fechas li a:hover {
+
+    background-color: rgb(207, 207, 207);
+}
+
+
+.proximas-fechas li a img {
+    filter: grayscale();
+    transition: all 0.1s ease-in-out;
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+
+
+.proximas-fechas li a:hover img {
+    filter: none;
+    margin-right: 1.4rem;
+    opacity: 1;
+}
+
+
+.testimonios {
+    background-color: rgb(207, 207, 207);
+    padding-bottom: 4rem !important;
+}
+
+
+.testimonio {
+    text-align: center;
+    padding: 30px 30px;
+}
+
+
+.mapa iframe {
+    width: 100%;
+    aspect-ratio: 1.2;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll_section {
+    scroll-margin-top: 60px;
+}
