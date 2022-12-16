@@ -1,55 +1,57 @@
-<div class="container" style="margin-top: 100px;">
+<div class="container-fluid hero scroll_section">
 
 
     {{!INICIO fila 1 -- }}
-    <div class="row"> 
+    <div class="row" style="margin:60px auto;">
         <div class="col">
             <p class="text-end">
                 <span>Hola {{persona}}!</span>
                 <a href="/admin/login/logout" class="btn btn-danger">Cerrar sesión
                     <i class="fas fa-sing-ouy-alt"></i></a>
             </p>
-        </div> {{!FIN fila 1 -- }}
+        </div>
+        {{!FIN fila 1 -- }}
+
 
         {{!INICIO fila 2 -- }}
         <div class="row">
             <div class="col-7" style="margin-top:-9px ;">
-                <h2>Listado de novedades</h2>
+                <h3>Listado de novedades</h3>
             </div>
             <div class="col-5 text-end">
-
-                <a href="" class="btn btn-success"> <i class="fas fa-plus"></i>Nuevo</a>
+                <a href="/admin/novedades/agregar" class="btn btn-success"> <i class="fas fa-plus"></i> Nuevo</a>
             </div>
-
-        </div>{{!FIN fila 2 -- }}
-
-    {{!INICIO fila 3 -- }}
-
-    <div class="row">
-        <div class="col">
-            <table class="table">
-                <thead>
-                    <tr class="table-dark">
-                        <th scope="col">#</th>
-                        <th scope="col">Título</th>
-                        <th scope="col" class="text-end">Acciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {{#each novedades}}
-                    <tr>
-                        <th scope="row">{{id}}</th>
-                        <td>Aporinautas en {{lugar}} el {{fecha}}</td>
-                        <td class="text-end">
-                            <a href=" " class="btn btn-secundary"><i class="fas fa-pencil-alt"></i></a>
-                            <a href="/admin/novedades/eliminar/{{id}} " class="btn btn-secundary"><i class="fas fa-trash"></i></a>
-                        </td>
-                    </tr>
-                    {{/each}}
-                </tbody>
-            </table>
         </div>
-    </div>
+        {{!FIN fila 2 -- }}
+
+
+        {{!INICIO fila 3 -- }}
+        <div class="row">
+            <div class="col-8">
+                <table class="table">
+                    <thead>
+                        <tr class="table-dark">
+                            <th scope="col">#</th>
+                            <th scope="col">Título</th>
+                            <th scope="col" class="text-end">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each novedades}}
+                        <tr style="color:white">
+                            <th scope="row">{{id}}</th>
+                            <td>Aporinautas en {{lugar}} el {{fecha}}</td>
+                            <td class="text-end">
+                                <a href="/admin/novedades/modificar/{{id}} " class="btn btn-secundary"><i class="fas fa-pencil-alt"></i></a>
+                                <a href="/admin/novedades/eliminar/{{id}} " class="btn btn-secundary"><i
+                                        class="fas fa-trash"></i></a>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
 
 

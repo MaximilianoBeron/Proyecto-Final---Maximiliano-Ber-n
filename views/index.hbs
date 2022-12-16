@@ -21,8 +21,9 @@
 
 
 
-<div class="row my-3">
-    <div id="calendario" class="col-md-5 offset-md-1 scroll_section">
+<div class="row my-2">
+
+    <div id="calendario" class="col-md-4 offset-md-1 scroll_section">
         <h4>Próximas Fechas:</h4>
         <ul class="proximas-fechas">
             {{#each novedades}}
@@ -44,9 +45,9 @@
                             style="font-family: 'Architects Daughter', cursive;">Aporinautas en {{lugar}}</h2>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body mt-3">
                         <h5>● {{fecha}}</h5>
-                        <div class="mapa">
+                        <div class="mapa mt-5">
                             <iframe src={{ubicacion}}></iframe>
                         </div>
                     </div>
@@ -57,204 +58,204 @@
 
         <!-- Fin Modal -->
 
+    </div>
 
-
-        <!-- Inicio carousel Testimonios -->
-        <div class="col-md-7 my-4">
-            <div class="rounded py-5 testimonios">
-                <h2 class="text-center" style="font-family:'Architects Daughter', cursive ;">Testimonios</h2>
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="testimonio">
-                                <h5>Los felicito chicos!</h5>
-                                <p>Valeria, Almagro</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="testimonio">
-                                <h5>Me encantó! sigan así</h5>
-                                <p>Deby, Lanús</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="testimonio">
-                                <h5>Buenísimo el tema nuevo!!</h5>
-                                <p>Leandro, Caballito</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+    <!-- Inicio carousel Testimonios -->
+    <div class="col-md-4 my-4">
+        <div class="rounded py-5 testimonios">
+            <h2 class="text-center" style="font-family:'Architects Daughter', cursive ;">Testimonios</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonio">
+                            <h5>Los felicito chicos!</h5>
+                            <p>Valeria, Almagro</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonio">
+                            <h5>Me encantó! sigan así</h5>
+                            <p>Deby, Lanús</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonio">
+                            <h5>Buenísimo el tema nuevo!!</h5>
+                            <p>Leandro, Caballito</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </div> <!-- Fin carousel Testimonios -->
+        </div>
+    </div> <!-- Fin carousel Testimonios -->
+
+
+
+
+<!-- Inicio HISTORIA -->
+<div id="biografia" class="row aling-items-center py-4 scroll_section" style="background-color: rgb(207, 207, 207)">
+    <div class="col-lg-2 col-md-3 offset-lg-1 d-none d-sm-block ">
+        <img src="images/aporia.jpg" alt="aporía" class="img-fluid">
+        <img src="images/238.jpg" alt="éxtasis" class="img-fluid">
     </div>
 
+    <div class="col-lg-2 col-md-3 d-none d-sm-block ">
+        <img src="images/extasis.jpg" alt="extasis" class="img-fluid">
+        <img src="images/quesalgasolo.jpg" alt="que salga solo" class="img-fluid">
+    </div>
 
-    <!-- Inicio HISTORIA -->
-    <div id="biografia" class="row aling-items-center py-4 scroll_section" style="background-color: rgb(207, 207, 207)">
-        <div class="col-lg-2 col-md-3 offset-lg-1 d-none d-sm-block ">
-            <img src="images/aporia.jpg" alt="aporía" class="img-fluid">
-            <img src="images/238.jpg" alt="éxtasis" class="img-fluid">
-        </div>
-
-        <div class="col-lg-2 col-md-3 d-none d-sm-block ">
-            <img src="images/extasis.jpg" alt="extasis" class="img-fluid">
-            <img src="images/quesalgasolo.jpg" alt="que salga solo" class="img-fluid">
-        </div>
-
-        <div class="col-lg-6 col-md-6 mt-4 mt-sm-0">
-            <h2 style="font-family:'Architects Daughter', cursive ;">Biografía</h2>
-            <p>El grupo fue formado, a principios de 2017, por Catriel Rivadero. Luego de varios meses de
-                composición y
-                ensayos, el grupo debuta en vivo, en noviembre de ese año, en “La Dama de Bollini”. Luego de algunos
-                recitales, ingresan al estudio para plasmar su primera producción. En 2018 editan su primer disco
-                "Aporía". Fue grabado y producido en los estudios "El Establo", con el ingeniero Erico Schick. El
-                trabajo muestra las primeras composiciones del grupo, donde prima la improvisación, el trabajo con
-                el timbre y las formas libres.
-                El grupo presenta el disco en distintas salas de la Ciudad de Buenos Aires.
-                A fines de 2019, entran nuevamente a los estudios "El Establo" para grabar su
-                segundo disco, "Éxtasis". En el mes de abril salen los simples "Páramo", "238" y "Que Salga Solo".
-                Finalmente, el
-                15 de mayo de 2020 el disco sale a la luz. El mismo representa un paso adelante en su carrera, con
-                un estilo
-                más
-                orientado al rock, sin perder el trabajo con los climas, las formas
-                musicales y el trabajo con el timbre. En el disco se ven también influencias de la música latina, el
-                funk, el blues y la psicodelia. A mediados de 2020 sale un EP con 3 temas grabado en los míticos
-                estudios ION. Todos los temas cuentan además con una edición en video.</p>
-
-        </div>
+    <div class="col-lg-6 col-md-6 mt-4 mt-sm-0">
+        <h2 style="font-family:'Architects Daughter', cursive ;">Biografía</h2>
+        <p>El grupo fue formado, a principios de 2017, por Catriel Rivadero. Luego de varios meses de
+            composición y
+            ensayos, el grupo debuta en vivo, en noviembre de ese año, en “La Dama de Bollini”. Luego de algunos
+            recitales, ingresan al estudio para plasmar su primera producción. En 2018 editan su primer disco
+            "Aporía". Fue grabado y producido en los estudios "El Establo", con el ingeniero Erico Schick. El
+            trabajo muestra las primeras composiciones del grupo, donde prima la improvisación, el trabajo con
+            el timbre y las formas libres.
+            El grupo presenta el disco en distintas salas de la Ciudad de Buenos Aires.
+            A fines de 2019, entran nuevamente a los estudios "El Establo" para grabar su
+            segundo disco, "Éxtasis". En el mes de abril salen los simples "Páramo", "238" y "Que Salga Solo".
+            Finalmente, el
+            15 de mayo de 2020 el disco sale a la luz. El mismo representa un paso adelante en su carrera, con
+            un estilo
+            más
+            orientado al rock, sin perder el trabajo con los climas, las formas
+            musicales y el trabajo con el timbre. En el disco se ven también influencias de la música latina, el
+            funk, el blues y la psicodelia. A mediados de 2020 sale un EP con 3 temas grabado en los míticos
+            estudios ION. Todos los temas cuentan además con una edición en video.</p>
 
     </div>
-    <!-- Fin HISTORIA -->
+
+</div>
+<!-- Fin HISTORIA -->
 
 
-    <!-- Inicio NOSOTROS -->
-    <div id="nosotros" class="row aling-items-stretch my-3 py-4 scroll_section">
-        <div class="col-lg-8 offset-lg-2 g-4">
-            <h2 style="font-family:'Architects Daughter', cursive ;">Nosotros</h2>
-            <div class="row row-cols-1 row-cols-md-4 g-4">
-                <div class="col">
-                    <div class="card">
-                        <img src="images/catriel.png" class="card-img-top" alt="Catriel Rivadero">
-                        <div class="card-body">
-                            <h5 class="card-title">Catriel Rivadero</h5>
-                            <p class="card-text">Fundador y guitarrista de la banda. Motor creativo y director de la
-                                banda.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="images/maxi.png" class="card-img-top" alt="Maximiliano Berón">
-                        <div class="card-body">
-                            <h5 class="card-title">Maxi Berón</h5>
-                            <p class="card-text">Tecladista la banda. Ingresó en el 2017 y desde entonces forma
-                                parte de la banda.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card ">
-                        <img src="images/mario.png" class="card-img-top" alt="Mario Alvarado">
-                        <div class="card-body">
-                            <h5 class="card-title">Mario Alvarado</h5>
-                            <p class="card-text">Bajista de la banda. Se incorporó en el año 2019 con todo el power
-                                de
-                                su Fender.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="images/julia.png" class="card-img-top" alt="Julia Fernández">
-                        <div class="card-body">
-                            <h5 class="card-title">Julia Fernández</h5>
-                            <p class="card-text">Baterista de la banda. Se sumó en el año 2021 para regalarnos su
-                                magia.
-                            </p>
-                        </div>
+<!-- Inicio NOSOTROS -->
+<div id="nosotros" class="row aling-items-stretch my-3 py-4 scroll_section">
+    <div class="col-lg-8 offset-lg-2 g-4">
+        <h2 style="font-family:'Architects Daughter', cursive ;">Nosotros</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="images/catriel.png" class="card-img-top" alt="Catriel Rivadero">
+                    <div class="card-body">
+                        <h5 class="card-title">Catriel Rivadero</h5>
+                        <p class="card-text">Fundador y guitarrista de la banda. Motor creativo y director de la
+                            banda.</p>
                     </div>
                 </div>
             </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/maxi.png" class="card-img-top" alt="Maximiliano Berón">
+                    <div class="card-body">
+                        <h5 class="card-title">Maxi Berón</h5>
+                        <p class="card-text">Tecladista la banda. Ingresó en el 2017 y desde entonces forma
+                            parte de la banda.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card ">
+                    <img src="images/mario.png" class="card-img-top" alt="Mario Alvarado">
+                    <div class="card-body">
+                        <h5 class="card-title">Mario Alvarado</h5>
+                        <p class="card-text">Bajista de la banda. Se incorporó en el año 2019 con todo el power
+                            de
+                            su Fender.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/julia.png" class="card-img-top" alt="Julia Fernández">
+                    <div class="card-body">
+                        <h5 class="card-title">Julia Fernández</h5>
+                        <p class="card-text">Baterista de la banda. Se sumó en el año 2021 para regalarnos su
+                            magia.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- Fin NOSOTROS -->
+</div>
+<!-- Fin NOSOTROS -->
 
 
-    <!-- Inicio FORMULARIO + REPRODUCTOR DE MÚSICA -->
-    <div id="contactanos" class="row py-4 scroll_section" style="background-color: rgb(207, 207, 207)">
-        <div class="row">
-            <!-- Inicio FORMULARIO -->
-            <div class="col-md-5 mt-4 mt-sm-2 offset-lg-1">
-                <h4 style="font-family:'Architects Daughter', cursive ;">Suscribite para recibir las novedades:</h4>
-                <form class="row g-3" action="/" method="post">
+<!-- Inicio FORMULARIO + REPRODUCTOR DE MÚSICA -->
+<div id="contactanos" class="row py-4 scroll_section" style="background-color: rgb(207, 207, 207)">
+    <div class="row">
+        <!-- Inicio FORMULARIO -->
+        <div class="col-md-5 mt-4 mt-sm-2 offset-lg-1">
+            <h4 style="font-family:'Architects Daughter', cursive ;">Suscribite para recibir las novedades:</h4>
+            <form class="row g-3" action="/" method="post">
 
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre"
-                            name="nombre">
-                    </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre"
+                        name="nombre">
+                </div>
 
-                    <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"
-                            id="apellido" name="apellido">
-                    </div>
+                <div class="col-md-6">
+                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="apellido"
+                        name="apellido">
+                </div>
 
-                    <div class="col-md-6">
-                        <label for="email" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="email" placeholder="example@outlook.com"
-                            name="email">
-                    </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="example@outlook.com" name="email">
+                </div>
 
-                    <div class="col-md-6">
-                        <label for="tel" class="form-label">Tel:</label>
-                        <input type="text" class="form-control" id="tel" placeholder="..." name="tel">
-                    </div>
-
-
-                    <div class="col-12">
-                        <textarea class="form-control" placeholder="Dejanos tu comentario" rows="4" id="comentario"
-                            name="comentario" style="height: 100px"></textarea>
-                    </div>
-
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                    </div>
-
-                </form>
-                <p>{{message}}</p>
-            </div>
-            <!-- Fin FORMULARIO -->
+                <div class="col-md-6">
+                    <label for="tel" class="form-label">Tel:</label>
+                    <input type="text" class="form-control" id="tel" placeholder="..." name="tel">
+                </div>
 
 
+                <div class="col-12">
+                    <textarea class="form-control" placeholder="Dejanos tu comentario" rows="4" id="comentario"
+                        name="comentario" style="height: 100px"></textarea>
+                </div>
 
-            <!-- Inicio REPRODUCTOR DE MÚSICA -->
-            <div class="col-md-4 offset-lg-1">
-                <iframe style="border-radius:12px"
-                    src="https://open.spotify.com/embed/artist/5iIQXw3kjZeDOzp07C2l78?utm_source=generator" width="100%"
-                    height="400" frameBorder="1" allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
-            </div>
-            <!-- Fino REPRODUCTOR DE MÚSICA -->
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+
+            </form>
+            <p>{{message}}</p>
         </div>
+        <!-- Fin FORMULARIO -->
+
+
+
+        <!-- Inicio REPRODUCTOR DE MÚSICA -->
+        <div class="col-md-4 offset-lg-1">
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/artist/5iIQXw3kjZeDOzp07C2l78?utm_source=generator" width="100%"
+                height="400" frameBorder="1" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </div>
+        <!-- Fino REPRODUCTOR DE MÚSICA -->
     </div>
+</div>
 </div> <!-- Fin MAPA + FORMULARIO + REPRODUCTOR DE MÚSICA -->
