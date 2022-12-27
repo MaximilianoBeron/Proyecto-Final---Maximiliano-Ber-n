@@ -21,10 +21,10 @@
 
 
 
-<div class="row my-4">
+<div class="row my-5">
 
     <div id="calendario" class="col-md-7 offset-md-1 scroll_section">
-        <h4>Próximas Fechas:</h4>
+        <h2 style="font-family: 'Architects Daughter', cursive;">Próximas Fechas:</h2>
         <ul class="proximas-fechas my-4">
             {{#each novedades}}
             <li><a href="#" data-bs-toggle="modal" data-bs-target="#modal{{id}}">
@@ -62,8 +62,8 @@
 
     </div>
 
-    <!-- Inicio carousel Testimonios -->
-    <div class="col-md-3 my-4">
+    <!-- Inicio Carousel Testimonios -->
+    <div class="col-md-3 my-2">
         <div class="rounded py-5 testimonios">
             <h2 class="text-center" style="font-family:'Architects Daughter', cursive ;">Testimonios</h2>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
@@ -107,13 +107,13 @@
                 </button>
             </div>
         </div>
-    </div> <!-- Fin carousel Testimonios -->
+    </div> <!-- Fin Carousel Testimonios -->
 </div>
 
 
-</div>
 
-<!-- Inicio HISTORIA -->
+
+<!-- Inicio BIOGRAFÍA -->
 <div id="biografia" class="row aling-items-center py-4 scroll_section" style="background-color: rgb(207, 207, 207)">
     <div class="col-lg-2 col-md-3 offset-lg-1 d-none d-sm-block ">
         <img src="images/aporia.jpg" alt="aporía" class="img-fluid">
@@ -149,7 +149,75 @@
     </div>
 
 </div>
-<!-- Fin HISTORIA -->
+<!-- Fin BIOGRAFÍA -->
+
+
+
+<!-- Inicio DISCOGRAFÍA -->
+
+<div id="discografia" class="row aling-items-center py-4 hero scroll_section" style="background-color: black">
+    <div class="discografia">
+        <div class="row my-3 offset-md-1 scroll_section">
+            <h1 style="font-family: 'Architects Daughter', cursive;">Discografía...</h1>
+            <div class="col-lg-9 offset-lg-1 g-5">
+
+                <div class="row row-cols-3 row-cols-md-3 g-9">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title"
+                                    style="color:black; font-family: 'Architects Daughter', cursive;">Aporía</h4>
+                            </div>
+                            <iframe style="border-radius:12px"
+                                src="https://open.spotify.com/embed/album/01AcjNNtEbYQMbDOIrW5sE?utm_source=generator"
+                                width="100%" height="380" frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title"
+                                    style="color:black; font-family: 'Architects Daughter', cursive;">Éxtasis</h5>
+                            </div>
+                            <iframe style="border-radius:12px"
+                                src="https://open.spotify.com/embed/album/7HbOAzfJGoEw96VW8wySor?utm_source=generator"
+                                width="100%" height="380" frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+
+
+                    <div class="col">
+                        <div class="card ">
+                            <div class="card-body">
+                                <h5 class="card-title"
+                                    style="color:black; font-family: 'Architects Daughter', cursive;">EN ION</h5>
+                            </div>
+                            <iframe style="border-radius:12px"
+                                src="https://open.spotify.com/embed/album/29DHj3nKYLR5LTMb0B8SX3?utm_source=generator"
+                                width="100%" height="380" frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Fin DISCOGRAFÍA -->
+
+
+
+
+
 
 
 <!-- Inicio NOSOTROS -->
@@ -193,8 +261,9 @@
                     <img src="images/julia.png" class="card-img-top" alt="Julia Fernández">
                     <div class="card-body">
                         <h5 class="card-title">Julia Fernández</h5>
-                        <p class="card-text">Baterista de la banda. Se sumó en el año 2021 para regalarnos su
-                            magia.
+                        <p class="card-text">Baterista de la banda. Se sumó en el año 2021 para aportar su
+                            experiencia y
+                            estudio.
                         </p>
                     </div>
                 </div>
@@ -252,11 +321,8 @@
 
         <!-- Inicio REPRODUCTOR DE MÚSICA -->
         <div class="col-md-4 offset-lg-1">
-            <iframe style="border-radius:12px"
-                src="https://open.spotify.com/embed/artist/5iIQXw3kjZeDOzp07C2l78?utm_source=generator" width="100%"
-                height="400" frameBorder="1" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"></iframe>
+            <h4>Próximo show:</h4>
+            <img style="height: 100vh"  src="images/flyergavilan.jpg" alt="flyer">
         </div>
         <!-- Fino REPRODUCTOR DE MÚSICA -->
     </div>
