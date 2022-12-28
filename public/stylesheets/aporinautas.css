@@ -2,6 +2,7 @@
 /*font-family: 'Architects Daughter', cursive;*/
 
 
+
 footer {
     background-color: rgb(116, 116, 177);
 }
@@ -20,6 +21,12 @@ iframe {
 h1,
 h4 h5 {
     font-family: 'Alfa Slab One', cursive;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
 }
 
 
@@ -96,12 +103,19 @@ h4 h5 {
 
 
 
-html {
-    scroll-behavior: smooth;
-}
-
-
-
 .scroll_section {
     scroll-margin-top: 60px;
 }
+
+
+
+.nav-link img {
+    width: 1.8vw;
+    height: 1.8vw;
+}
+
+
+
+
+
+

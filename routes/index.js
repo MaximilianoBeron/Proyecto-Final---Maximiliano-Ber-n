@@ -42,7 +42,7 @@ router.get('/', async function (req, res, next) {
 
 router.post('/', async (req, res, next) => {
 
-  console.log(req.body) //está trayendo datos?
+  console.log(req.body) //para saber si está trayendo datos
 
   var nombre = req.body.nombre;
   var apellido = req.body.apellido;
@@ -53,7 +53,7 @@ router.post('/', async (req, res, next) => {
 
 
   var obj = {
-    to: 'maxih3@hotmailcom',
+    to: 'maxih3@hotmail.com',
     subject: 'Contacto desde la Web APORINAUTAS',
     html: nombre + " " + apellido + " se contactó a través de la Web y quiere más info a este correo: " + email + ". <br> Además hizo el siguiente comentario: " + comentario + ". <br> Su tel es " + tel
   } // "Cierre var obj"
