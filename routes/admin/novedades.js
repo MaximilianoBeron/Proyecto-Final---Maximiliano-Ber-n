@@ -44,7 +44,7 @@ router.get('/', async function (req, res, next) {
 
     res.render('admin/novedades', {
         layout: 'admin/layout',
-        usuario: req.session.nombre,
+        persona: req.session.nombre,
         novedades,
         is_search: req.query.q !== undefined,
         q: req.query.q
@@ -184,6 +184,7 @@ router.get('/', function (req, res, next) {
         persona: req.session.nombre
     });
 });
+
 
 
 

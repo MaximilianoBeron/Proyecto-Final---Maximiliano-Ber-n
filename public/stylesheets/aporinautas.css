@@ -10,7 +10,7 @@ footer {
 
 
 iframe {
-    border: 5px solid #ffffff;
+    border: 3px solid #ffffff;
     box-shadow: 2px 7px 53px 5px rgba(15, 3, 3, 1);
     -webkit-box-shadow: 2px 7px 53px 5px rgba(15, 3, 3, 1);
     -moz-box-shadow: 2px 7px 53px 5px rgba(15, 3, 3, 1);
@@ -116,6 +116,6 @@ html {
 
 
 
-
-
-
+.push {
+    margin-left: auto;
+}
